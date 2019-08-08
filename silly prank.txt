@@ -1,0 +1,17 @@
+@ECHO OFF
+SET BROWSER=chrome.exe
+SET WAIT_TIME=2
+START %BROWSER% -new-tab ""
+@ping 127.0.0.1 -n %WAIT_TIME% -w 1000 > nul
+START %BROWSER% -new-tab ""
+START %BROWSER% -new-tab ""
+pause	
+
+GOTO End 
+to get file to randomly open in friends pc, save this file
+on your pc as a batch file (.bat) then get on their pc, 
+download the file there, then open run, then type shell:startup, 
+then hit ok to open up the startup folder. Place the file into the 
+startup folder, and restart the computer. Enjoy your friends horrified 
+reaction when they open the pc!#
+:End
